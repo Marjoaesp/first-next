@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "bootstrap/dist/css/bootstrap.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -16,7 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <style>
+          {`
+            body {
+              background-color: #F2F3F4; /* Aquí puedes definir el color de fondo */
+            }
+          `}
+        </style>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
