@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import NavBar from "./NavBar";
 import Actas from "./Actas";
 import Turnos from "./Turnos";
+import ManejoDeActas from "./ManejoDeActas.";
 export default function Home() {
   return (
     <main className="#F2F3F4">
